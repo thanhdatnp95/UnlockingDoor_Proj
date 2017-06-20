@@ -1,0 +1,13 @@
+edit: ok the LDR is wired to the ADC pin, analogRead(A0); works fine, giving 0-1023 readings.
+
+the button is not a reset/flash button, but an input, its pulled high, so when you press it it returns 0, releasing returns 1
+
+the pins seem to be:
+
+LDR = A0;
+RED = 15;
+GREEN = 12;
+BLUE = 13;
+BUTTON = 4;
+
+although the RED of the LED doesn't seem to be PWM'ing, its either on or off. - See more at: http://www.esp8266.com/viewtopic.php?f=13&t=7409#sthash.JWj95orE.dpuf
